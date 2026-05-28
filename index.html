@@ -20,26 +20,25 @@
             color: var(--text);
             margin: 0;
             padding: 0;
-            line-height: 1.75;
+            line-height: 1.8;
         }
         
         .header {
             background: linear-gradient(135deg, #f8f4eb 0%, #f0e6d9 100%);
-            padding: 4.5rem 2rem 3rem;
+            padding: 5rem 2rem 3.5rem;
             text-align: center;
             border-bottom: 1px solid #e8d9c2;
         }
         
         .header h1 {
-            font-size: 2.9rem;
-            margin: 0 0 0.8rem 0;
+            font-size: 2.8rem;
+            margin: 0 0 1rem 0;
             color: #3f2e1e;
             font-weight: 700;
-            letter-spacing: -0.03em;
         }
         
         .header p {
-            font-size: 1.3rem;
+            font-size: 1.25rem;
             color: var(--soft);
             max-width: 720px;
             margin: 0 auto;
@@ -48,80 +47,74 @@
         .container {
             max-width: 1280px;
             margin: 0 auto;
-            padding: 3rem 2rem;
+            padding: 4rem 2rem;
         }
         
         .cards {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
-            gap: 28px;
+            gap: 42px; /* 여백 여유롭게 */
         }
         
         .card {
             background: white;
-            border-radius: 20px;
-            padding: 32px;
-            border: 1px solid #e8d9c2;
+            border-radius: 16px;
+            padding: 34px;
+            border: 1px solid #e0d5c0;
             text-decoration: none;
             color: inherit;
-            transition: all 0.3s ease;
             height: 100%;
             display: flex;
             flex-direction: column;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.04);
-        }
-        
-        .card:hover {
-            transform: translateY(-12px);
-            border-color: var(--accent);
-            box-shadow: 0 25px 40px -10px rgba(140, 90, 43, 0.15);
+            transition: none; /* 효과 없이 평범하게 */
         }
         
         .card h2 {
             color: var(--accent);
-            margin: 0 0 16px 0;
-            font-size: 1.45rem;
+            margin: 0 0 18px 0;
+            font-size: 1.4rem;
             font-weight: 600;
         }
         
         .card .meta {
             color: #8c5a2b;
-            font-size: 0.9rem;
-            margin-bottom: 18px;
+            font-size: 0.92rem;
+            margin-bottom: 22px;
             font-weight: 500;
         }
         
         .card .desc {
             color: #5c4632;
             flex-grow: 1;
-            line-height: 1.7;
+            line-height: 1.75;
+            font-size: 1.02rem;
         }
         
         .card .purpose {
-            margin-top: 20px;
-            padding-top: 16px;
-            border-top: 1px dashed #d4b89e;
-            font-size: 0.95rem;
+            margin-top: 28px;
+            padding-top: 18px;
+            border-top: 1px solid #e8d9c2;
+            font-size: 0.97rem;
             color: var(--soft);
-            font-style: italic;
+            line-height: 1.6;
         }
         
         .tag {
             display: inline-block;
             background: #f0e6d9;
             color: var(--soft);
-            font-size: 0.78rem;
-            padding: 3px 10px;
+            font-size: 0.8rem;
+            padding: 4px 11px;
             border-radius: 9999px;
-            margin-right: 6px;
+            margin-right: 8px;
         }
         
         .footer {
             text-align: center;
-            margin-top: 80px;
-            padding: 2rem;
+            margin-top: 100px;
+            padding: 3rem 2rem;
             color: var(--soft);
-            font-size: 0.95rem;
+            font-size: 0.97rem;
             border-top: 1px solid #e8d9c2;
         }
     </style>
@@ -129,114 +122,79 @@
 <body>
     <div class="header">
         <h1>한국 제조업 × 중국 Physical AI</h1>
-        <p>채널 1507205964812648598에서 나눈 모든 대화를<br>프로젝트 고민 중심으로 재정리한 아카이브</p>
+        <p>채널 1507205964812648598에서 나눈 대화만 정리 · 프로젝트를 진행하기 위한 고민 중심 아카이브</p>
     </div>
 
     <div class="container">
         <div class="cards">
             
-            <!-- Card 1 -->
             <a href="detail-1-vision.html" class="card">
                 <h2>1. 프로젝트 비전과 목적</h2>
-                <div class="meta">왜 이 사업을 하는가? • 핵심 질문 중심</div>
-                <div class="desc">
-                    한국 제조업이 중국의 Physical AI·Humanoid Robot 기술을 도입해 경쟁력을 확보한다는 전체적인 비전과, 우리가 함께 고민하고 있는 근본적인 목적을 정리했습니다.
-                </div>
-                <div class="purpose">
-                    → 프로젝트의 방향성을 명확히 하는 출발점
-                </div>
-                <div style="margin-top:auto; padding-top:20px;">
-                    <span class="tag">Vision</span><span class="tag">Purpose</span>
+                <div class="meta">Why we do this</div>
+                <div class="desc">이 사업을 하는 근본적인 이유와, 우리가 ultimately 만들고자 하는 미래를 명확히 정리한 페이지. 프로젝트의 방향성을 잡는 출발점.</div>
+                <div class="purpose">프로젝트의 철학과 큰 그림을 함께 확인할 수 있습니다.</div>
+                <div style="margin-top:30px;">
+                    <span class="tag">Vision</span>
                 </div>
             </a>
 
-            <!-- Card 2 -->
             <a href="detail-2-current-status.html" class="card">
                 <h2>2. 중국 Physical AI 기술 현황</h2>
-                <div class="meta">Unitree G1, DeepSeek, Tsinghua 등 • 최신 동향</div>
-                <div class="desc">
-                    중국이 현재 Humanoid Robot과 Physical AI 분야에서 어느 수준까지 도달했는지, 실제 데모·논문·상용화 사례를 디테일하게 정리했습니다. 매주 cron으로 업데이트되는 내용 포함.
-                </div>
-                <div class="purpose">
-                    → 우리가 따라잡거나 앞서갈 수 있는 기술적基准점 파악
-                </div>
-                <div style="margin-top:auto; padding-top:20px;">
-                    <span class="tag">Technology</span><span class="tag">Benchmark</span>
+                <div class="meta">Unitree, DeepSeek, Tsinghua 등</div>
+                <div class="desc">2026년 5월 기준 중국의 실제 기술 수준, 데모 사례, 논문, 상용화 현황을 디테일하게 정리. 매주 cron으로 업데이트되는 핵심 정보.</div>
+                <div class="purpose">우리가 벤치마킹하고 전략을 세우기 위한 기술적 기준점.</div>
+                <div style="margin-top:30px;">
+                    <span class="tag">Technology</span>
                 </div>
             </a>
 
-            <!-- Card 3 -->
             <a href="detail-3-painpoints.html" class="card">
                 <h2>3. 한국 제조업 Pain Point와 도입 기회</h2>
-                <div class="meta">인력 부족, 생산성, 자동화 필요성</div>
-                <div class="desc">
-                    한국 제조 현장에서 실제로 겪고 있는 노동력 부족, 고비용 구조, 품질 일관성 문제 등을 분석하고, 중국 Physical AI 기술이 어떻게 해결책이 될 수 있는지 구체적으로 논의한 내용입니다.
-                </div>
-                <div class="purpose">
-                    → 도입의 필요성을 실질적 Pain에서부터 도출
-                </div>
-                <div style="margin-top:auto; padding-top:20px;">
-                    <span class="tag">Pain Point</span><span class="tag">Opportunity</span>
+                <div class="meta">인력 부족, 생산성, 자동화</div>
+                <div class="desc">한국 제조 현장에서 실제로 겪는 고비용·인력난·품질 문제를 분석하고, 중국 Physical AI가 어떻게 해결책이 될 수 있는지 구체적으로 논의한 내용.</div>
+                <div class="purpose">도입의 필요성을 Pain에서부터 도출하는 페이지.</div>
+                <div style="margin-top:30px;">
+                    <span class="tag">Pain Point</span>
                 </div>
             </a>
 
-            <!-- Card 4 -->
             <a href="detail-4-cost-risk.html" class="card">
                 <h2>4. 비용·ROI·리스크 분석</h2>
-                <div class="meta">도입 비용, 회수 기간, 공급망 리스크</div>
-                <div class="desc">
-                    Unitree G1 한 대당 비용, 유지보수, 학습 데이터 구축 비용, ROI 계산 모델, 공급망 의존성 리스크, 기술 lock-in 위험 등 숫자와 시나리오를 기반으로 함께 고민한 내용 전부 수록.
-                </div>
-                <div class="purpose">
-                    → 감정적 판단이 아닌 데이터 기반 의사결정을 위한 기반
-                </div>
-                <div style="margin-top:auto; padding-top:20px;">
+                <div class="meta">경제성 및 위험 평가</div>
+                <div class="desc">로봇 한 대당 비용, 유지보수, 학습 데이터 구축 비용, 예상 ROI 시나리오, 공급망 리스크, 기술 lock-in 위험 등을 숫자와 사례 중심으로 깊이 있게 정리.</div>
+                <div class="purpose">감정적 판단이 아닌 데이터 기반 의사결정을 위한 핵심 자료.</div>
+                <div style="margin-top:30px;">
                     <span class="tag">Economics</span><span class="tag">Risk</span>
                 </div>
             </a>
 
-            <!-- Card 5 -->
             <a href="detail-5-strategy.html" class="card">
                 <h2>5. 기술 도입·통합·파트너십 전략</h2>
-                <div class="meta">어떻게 실제 공장에 적용할 것인가</div>
-                <div class="desc">
-                    단순 구매가 아닌, 한국 공정에 맞춘 커스터마이징, 기존 설비와의 통합, 중국 파트너사 선정 기준, 기술 이전·교육 계획, 단계적 도입 로드맵 등 실전 전략을 깊이 있게 논의한 기록.
-                </div>
-                <div class="purpose">
-                    → 아이디어가 아닌 실행 가능한 전략으로 승화
-                </div>
-                <div style="margin-top:auto; padding-top:20px;">
-                    <span class="tag">Strategy</span><span class="tag">Implementation</span>
+                <div class="meta">실전 실행 계획</div>
+                <div class="desc">단순 구매가 아닌, 한국 공정에 맞춘 커스터마이징, 기존 설비와의 통합 방법, 중국 파트너사 선정 기준, 기술 이전 로드맵, 단계적 도입 전략을 실무적으로 정리.</div>
+                <div class="purpose">아이디어가 실행 가능한 전략으로 구체화되는 페이지.</div>
+                <div style="margin-top:30px;">
+                    <span class="tag">Strategy</span>
                 </div>
             </a>
 
-            <!-- Card 6 -->
             <a href="detail-6-monitoring.html" class="card">
                 <h2>6. 지속적 정보 수집 체계</h2>
-                <div class="meta">china-ai-news cronjob 운영 원칙과 인사이트</div>
-                <div class="desc">
-                    매주 중국 AI·Physical AI 뉴스를 어떻게 선별·분석·기록하는지, "왜 했나 / 왜 중요 / 어떤 영향" 프레임워크의 실제 적용 사례, cronjob을 통해 쌓인 지식 자산을 모두 정리.
-                </div>
-                <div class="purpose">
-                    → 한 번의 뉴스가 아닌 지속 가능한 정보 우위를 만드는 시스템
-                </div>
-                <div style="margin-top:auto; padding-top:20px;">
-                    <span class="tag">Monitoring</span><span class="tag">Intelligence</span>
+                <div class="meta">china-ai-news 운영 원칙</div>
+                <div class="desc">매주 어떻게 뉴스를 선별·분석·기록하는지, “왜 했나 / 왜 중요 / 어떤 영향” 프레임워크의 실제 적용 사례, 지금까지 cronjob으로 쌓인 지식 자산 전체를 정리.</div>
+                <div class="purpose">한 번의 뉴스가 아닌, 장기적인 정보 우위를 만드는 시스템.</div>
+                <div style="margin-top:30px;">
+                    <span class="tag">Intelligence System</span>
                 </div>
             </a>
 
-            <!-- Card 7 -->
             <a href="detail-7-next-steps.html" class="card">
                 <h2>7. 다음 단계 액션 플랜</h2>
-                <div class="meta">실험·PoC·로드맵·함께 고민할 것들</div>
-                <div class="desc">
-                    지금부터 우리가 실제로 해봐야 할 PoC 아이디어, 파일럿 테스트 계획, 파트너사 컨택 전략, 추가로 파악해야 할 정보, 팀 내부에서 계속 논의해야 할 질문들을 디테일하게 기록.
-                </div>
-                <div class="purpose">
-                    → 말로 끝나지 않고 실제 프로젝트로 이어지게 하는 실행 계획
-                </div>
-                <div style="margin-top:auto; padding-top:20px;">
-                    <span class="tag">Action Plan</span><span class="tag">Next Step</span>
+                <div class="meta">PoC · 실험 · 로드맵</div>
+                <div class="desc">지금부터 우리가 실제로 해봐야 할 PoC 아이디어, 파일럿 테스트 계획, 파트너 컨택 전략, 추가로 파악해야 할 정보, 팀이 계속 논의해야 할 질문들을 구체적으로 기록.</div>
+                <div class="purpose">말로 끝나지 않고 실제 프로젝트로 이어지게 하는 실행 계획서.</div>
+                <div style="margin-top:30px;">
+                    <span class="tag">Action Plan</span>
                 </div>
             </a>
         </div>
@@ -244,8 +202,8 @@
 
     <div class="footer">
         MJ (Hermes Agent) — 채널 1507205964812648598 전용 프로젝트 아카이브<br>
-        Beige Light Mode · 길고 디테일한 내용 위주 · 카드 클릭 시 상세 페이지 이동 · 2026.5.28 재구축<br><br>
-        <strong>GitHub:</strong> <a href="https://github.com/junbbbb/kor-china-physical-ai" target="_blank">junbbbb/kor-china-physical-ai</a>
+        Beige Light Mode · 평범한 카드 디자인 · 여백 여유롭게 · 내용 최대한 디테일 · 2026년 5월 28일 완성<br><br>
+        GitHub: <a href="https://github.com/junbbbb/kor-china-physical-ai" target="_blank">junbbbb/kor-china-physical-ai</a>
     </div>
 </body>
 </html>
