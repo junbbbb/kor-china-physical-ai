@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2. 중국 Physical AI 기술 현황 - Physical AI 아카이브</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700&display=swap');
+        body { font-family: 'Pretendard', sans-serif; background: #f8f4eb; color: #3f2e1e; margin:0; padding:40px; line-height:1.85; }
+        .container { max-width: 1000px; margin: 0 auto; background: white; border-radius: 20px; padding: 50px; border: 1px solid #e8d9c2; }
+        h1 { color: #8c5a2b; border-bottom: 3px solid #d4b89e; padding-bottom: 16px; }
+        .back { color: #8c5a2b; text-decoration: none; font-weight: 500; }
+        .section { margin: 45px 0; }
+        .question { background: #fffaf0; border-left: 5px solid #c9a66b; padding: 22px; margin: 25px 0; border-radius: 0 12px 12px 0; }
+        .highlight { background: #f0e6d9; padding: 24px; border-radius: 12px; margin: 30px 0; border-left: 6px solid #8c5a2b; }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        th, td { padding: 14px; border: 1px solid #d4b89e; text-align: left; }
+        th { background: #f0e6d9; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back">← 카드 목록으로 돌아가기</a>
+        <h1>2. 중국 Physical AI 기술 현황</h1>
+        <p style="color:#6b5a47; font-size:1.1rem;">2026년 5월 기준, china-ai-news와 x_search를 통해 파악한 중국의 실제 기술 수준과 데모 사례를 디테일하게 정리</p>
+
+        <div class="section">
+            <h2>대표 기업·연구소별 현황 (cronjob에서 반복적으로 나온 내용)</h2>
+            
+            <div class="highlight">
+                <strong>Unitree Robotics</strong><br>
+                - G1 Humanoid: 대량 생산 단계 진입 (2026년 기준 가격 경쟁력 확보)<br>
+                - H1/H2 시리즈: 4m/s 이상 주행, 150N 외력 회복 능력 실증<br>
+                - 주요 강점: 가격, 안정성, 실용화 속도. 한국 제조업이 가장 먼저 검토할 대상.
+            </div>
+
+            <div class="highlight">
+                <strong>DeepSeek & Tsinghua University</strong><br>
+                - GRPO (Group Relative Policy Optimization): 기존 RLHF의 불안정성과 비용 문제를 해결한 새로운 강화학습 기법<br>
+                - DeepSeek-R1 (671B MoE): GPT-4o 수준 reasoning을 훨씬 낮은 비용으로 구현<br>
+                - 이는 Physical AI의 “brain” 부분에서 중국이 세계 선두권에 들어왔음을 의미
+            </div>
+
+            <div class="highlight">
+                <strong>Huawei Ascend + Baidu</strong><br>
+                - 미국 제재에도 불구하고 대규모 training cluster를 국산 칩으로 구축하는 데 성공<br>
+                - sovereign AI 인프라 완성 → Physical AI 모델 학습 비용을 중국 내에서 통제 가능
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>현재까지 파악된 기술 성숙도 (함께 논의한 내용)</h2>
+            <table>
+                <tr><th>영역</th><th>중국 수준 (2026.5)</th><th>한국 제조업 적용 가능성</th></tr>
+                <tr><td>Locomotion (이동)</td><td>상용화 초기 (Unitree G1/H2)</td><td>높음 — 공장 내 물류·순찰</td></tr>
+                <tr><td>Dexterous Manipulation (정밀 조작)</td><td>연구→실용화 전환 중</td><td>중간 — 조립 공정부터 PoC 필요</td></tr>
+                <tr><td>Brain (Reasoning & Planning)</td><td>세계 최고 수준 (DeepSeek, Tsinghua)</td><td>매우 높음 — 시뮬레이션 + RL 결합</td></tr>
+                <tr><td>Sim-to-Real Transfer</td><td>빠른 진전 중</td><td>핵심 기술 — 한국 강점(정밀 기계)과 결합 가능</td></tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2>함께 계속 파악하고 논의해야 할 것</h2>
+            <ul>
+                <li>Unitree G1의 실제 공장 배치 사례 (중국 내 성공/실패 케이스)</li>
+                <li>중국 정부의 Physical AI 육성 정책과 보조금 규모</li>
+                <li>한국 기업이 중국 로봇을 도입했을 때 발생하는 데이터·보안·기술 유출 리스크</li>
+                <li>우리만의 차별화 포인트 (예: 한국형 정밀 제어 + 중국 하드웨어 결합)</li>
+            </ul>
+        </div>
+
+        <p style="text-align:center; margin-top:60px; color:#8c5a2b;">
+            이 페이지는 단순 뉴스 요약이 아니라, 우리가 프로젝트를 진행하면서 계속 참고할 수 있는 “기술 현황판”으로 만들었습니다. 필요하면 더 많은 실제 cron 결과와 링크를 추가하겠습니다.
+        </p>
+    </div>
+</body>
+</html>
